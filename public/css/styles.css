@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-* {box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 /*-------------------- Body --------------------*/
@@ -32,13 +33,13 @@ header p {
     margin-right: 0;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav a{
+nav a {
     color: #222222;
     display: inline-block;
     text-decoration: none;
@@ -62,25 +63,27 @@ nav li {
     text-align: center;
     border-radius: 15%;
     padding: 10px 0;
-    margin: auto; 
+    margin: auto;
     margin-top: 1rem;
 }
+
 .fa-bars {
     font-size: 20px;
 }
 
-#headerFlex{
+#headerFlex {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
-#seccionLogo{
+#seccionLogo {
     padding: 0.5rem 0.8rem 0.5rem 0;
     width: 50%;
 }
+
 #logo {
-    width: 100%;   
+    width: 100%;
 }
 
 #seccion-busqueda {
@@ -92,18 +95,20 @@ nav li {
     flex-wrap: nowrap;
     margin-left: 0;
     margin-right: 0;
-    
+
 }
+
 #barraBusqueda {
     width: 100%;
     height: 2.2rem;
     border: none;
-    border-radius: 4px 0 0 4px;;
+    border-radius: 4px 0 0 4px;
+    ;
     padding-left: 0.5rem;
     background-color: #ffffff;
 }
 
-.fa-magnifying-glass{
+.fa-magnifying-glass {
     color: grey;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
@@ -117,14 +122,15 @@ nav li {
     align-self: stretch;
 }
 
-#navFlex{
+#navFlex {
     display: flex;
     flex-wrap: nowrap;
     padding-top: 0.5rem;
     padding-bottom: 0.25rem;
     justify-content: space-between;
 }
-.BarrasNavFlexIzq{
+
+.BarrasNavFlexIzq {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -132,7 +138,7 @@ nav li {
     justify-content: space-around;
 }
 
-.BarrasNavFlexDer{
+.BarrasNavFlexDer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -151,7 +157,7 @@ main {
     /* position: relative;
     top: 200px;
     z-index: -1; */
-    
+
 }
 
 #banner {
@@ -167,7 +173,8 @@ article {
     background-color: white;
     padding-bottom: 0.5rem;
     width: 100%;
-    transition: all 0.3s;;
+    transition: all 0.3s;
+    ;
 }
 
 article h3 {
@@ -175,17 +182,18 @@ article h3 {
 }
 
 .imagen {
-    width: 100%; 
+    width: 100%;
     max-width: 800px;
 }
 
-.cajaElementosArticulos{
-    border-top: solid 1px #ebebeb;  
+.cajaElementosArticulos {
+    border-top: solid 1px #ebebeb;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 1rem;
     position: relative;
 }
+
 .cajaElementosArticulos h2 {
     display: none;
     font-weight: bold;
@@ -196,19 +204,20 @@ article h3 {
     color: rgb(124, 124, 124);
 }
 
-.contenedorCamion{
+.contenedorCamion {
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     position: absolute;
     right: 20px;
     top: -15px;
     transition: all 0.5s;
 }
+
 .fa-truck {
     color: #39b54a;
     font-size: 16px;
@@ -224,12 +233,12 @@ article h3 {
     flex-wrap: nowrap;
 }
 
-.precios{
+.precios {
     font-size: 18px;
     margin: auto;
     width: 30%;
     font-weight: bolder;
-    
+
 }
 
 .off {
@@ -237,7 +246,7 @@ article h3 {
     font-size: 16px;
     margin: auto;
     width: 70%;
-    
+
 }
 
 .articulosFlex {
@@ -266,9 +275,9 @@ article h3 {
     max-width: 700px;
     margin: 1rem 0 1rem 0;
     box-shadow: 0px 0px 3px rgb(100, 100, 100);
-}   
+}
 
-#botonCargarFoto{
+#botonCargarFoto {
     font-size: 13.33px;
     font-weight: lighter;
     box-shadow: 0px 0px 3px rgb(100, 100, 100);
@@ -279,9 +288,11 @@ article h3 {
     padding: 0.6rem 50px;
     transition: all 0.2s;
 }
-#botonCargarFoto:hover{ 
+
+#botonCargarFoto:hover {
     background-color: #0022AA;
 }
+
 #botonCargarFoto:active {
     background-color: white;
     color: #000000;
@@ -295,24 +306,24 @@ article h3 {
     margin-bottom: 1rem;
 }
 
-.checkboxes{
+.checkboxes {
     margin-bottom: 1rem;
 }
 
-#recuadro{
+#recuadro {
     max-width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 2px rgb(100, 100, 100);
     text-align: center;
 }
 
-#foto{
+#foto {
     border: none;
     border-radius: 50%;
     background-color: #ffffff;
 }
 
-.botonEnviar{
+.botonEnviar {
     min-height: 2rem;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -325,15 +336,17 @@ article h3 {
     color: white;
     transition: all 0.2s;
 }
+
 .botonEnviar:hover {
     background-color: #0022AA;
 }
+
 .botonEnviar:active {
     background-color: white;
     color: #000000;
 }
 
-.botonResetear{
+.botonResetear {
     min-height: 2rem;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -346,16 +359,18 @@ article h3 {
     color: white;
     transition: all 0.2s;
 }
+
 .botonResetear:hover {
     background-color: #a00000;
 }
+
 .botonResetear:active {
     background-color: white;
     color: #000000;
 }
 
 
-.botonEnviarLogin{
+.botonEnviarLogin {
     min-height: 2rem;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -368,9 +383,11 @@ article h3 {
     color: white;
     transition: all 0.2s;
 }
+
 .botonEnviarLogin:hover {
     background-color: #0022AA;
 }
+
 .botonEnviarLogin:active {
     background-color: white;
     color: #000000;
@@ -386,7 +403,7 @@ article h3 {
 }
 
 
-#cargarFoto{
+#cargarFoto {
     width: 0%;
 }
 
@@ -394,12 +411,12 @@ article h3 {
 
 footer {
     text-align: center;
-    background-color:  white;
+    background-color: white;
     display: flex;
     flex-flow: column wrap;
 }
 
-footer section{
+footer section {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -413,7 +430,7 @@ footer i {
 
 footer h4 {
     font-weight: bold;
-    margin: 0px; 
+    margin: 0px;
 }
 
 footer p {
@@ -425,24 +442,24 @@ footer p {
     font-size: 14px;
     font-weight: lighter;
     margin: 1.5rem 1rem 0.5rem 1rem;
-   
+
 }
 
 /* -------------------------- Media Queries -------------------------- */
 
 /* Tablets */
-@media (min-width: 426px){
+@media (min-width: 426px) {
 
     .cajaElementosArticulos h2 {
         display: block;
         opacity: 100%;
     }
 
-    nav{
+    nav {
         display: block;
     }
 
-    #seccionHamburguesa{
+    #seccionHamburguesa {
         display: none;
     }
 
@@ -450,13 +467,13 @@ footer p {
         width: 46%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    
-    #seccionLogo{
+
+    #seccionLogo {
         width: 33%;
     }
 
     #seccion-busqueda {
-        width: 33%; 
+        width: 33%;
     }
 
     header p {
@@ -466,8 +483,8 @@ footer p {
     .off {
         text-align: center;
     }
-    
-    #headerFlex{
+
+    #headerFlex {
         justify-content: space-between;
     }
 
@@ -475,7 +492,7 @@ footer p {
         padding-bottom: 0.5rem;
     }
 
-    footer section{
+    footer section {
         padding-top: 2rem;
         padding-left: 4rem;
         padding-right: 4rem;
@@ -483,7 +500,7 @@ footer p {
 }
 
 /* Desktop-Laptop */
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
     .contenedorCamion:hover {
         transform: rotateZ(-90deg);
@@ -493,12 +510,15 @@ footer p {
         width: 23%;
         box-shadow: 0px 0px 0px rgb(100, 100, 100);
     }
-    article:hover{
+
+    article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    article:hover .cajaElementosArticulos h2{
+
+    article:hover .cajaElementosArticulos h2 {
         opacity: 100%;
     }
+
     .cajaElementosArticulos h2 {
         display: block;
         opacity: 0%;
@@ -510,12 +530,12 @@ footer p {
         margin-right: 0;
     }
 
-    .BarrasNavFlexIzq{
+    .BarrasNavFlexIzq {
         width: 40%;
         justify-content: space-between;
     }
-    
-    .BarrasNavFlexDer{
+
+    .BarrasNavFlexDer {
         width: 40%;
         justify-content: space-between;
     }
@@ -528,35 +548,38 @@ footer p {
         flex-flow: row wrap;
         justify-content: space-between;
     }
-    
-    footer section{
+
+    footer section {
         width: 30%;
         padding-top: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    .fa-credit-card:hover{
+    .fa-credit-card:hover {
         color: #EAC926;
     }
-    .fa-gift:hover{
+
+    .fa-gift:hover {
         color: #EAC926;
     }
-    .fa-user-shield:hover{
+
+    .fa-user-shield:hover {
         color: #EAC926;
     }
-    
+
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
+
     /* #navFlex{
         justify-content: space-between;
     } */
     nav a {
         font-size: 18px;
     }
+
     header p {
         font-size: 18px;
     }
 }
-

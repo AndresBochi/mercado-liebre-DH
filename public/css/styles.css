@@ -13,7 +13,6 @@ body {
     background-color: #ebebeb;
 }
 
-
 /*-------------------- Header --------------------*/
 
 header {
@@ -47,13 +46,9 @@ nav a {
     font-size: 14px;
 }
 
-nav {
-    display: none;
-}
+nav {display: none;}
 
-nav li {
-    margin: 0 5px;
-}
+nav li {margin: 0 5px;}
 
 #hamburguesa {
     background-color: #1259c3;
@@ -67,9 +62,7 @@ nav li {
     margin-top: 1rem;
 }
 
-.fa-bars {
-    font-size: 20px;
-}
+.fa-bars {font-size: 20px;}
 
 #headerFlex {
     display: flex;
@@ -82,13 +75,10 @@ nav li {
     width: 50%;
 }
 
-#logo {
-    width: 100%;
-}
+#logo {width: 100%;}
 
 #seccion-busqueda {
     text-align: left;
-
     width: 50%;
     margin: auto;
     display: flex;
@@ -146,7 +136,6 @@ nav li {
     justify-content: space-around;
 }
 
-
 /*-------------------- Main --------------------*/
 
 main {
@@ -157,7 +146,6 @@ main {
     /* position: relative;
     top: 200px;
     z-index: -1; */
-
 }
 
 #banner {
@@ -168,6 +156,7 @@ main {
 }
 
 /*-------------------- Articulos --------------------*/
+
 article {
     margin-bottom: 20px;
     background-color: white;
@@ -255,7 +244,6 @@ article h3 {
     justify-content: space-between;
 }
 
-
 /*-------------------- Formulario --------------------*/
 
 #formularioRegistro {
@@ -289,9 +277,7 @@ article h3 {
     transition: all 0.2s;
 }
 
-#botonCargarFoto:hover {
-    background-color: #0022AA;
-}
+#botonCargarFoto:hover {background-color: #0022AA;}
 
 #botonCargarFoto:active {
     background-color: white;
@@ -306,9 +292,7 @@ article h3 {
     margin-bottom: 1rem;
 }
 
-.checkboxes {
-    margin-bottom: 1rem;
-}
+.checkboxes {margin-bottom: 1rem;}
 
 #recuadro {
     max-width: 100%;
@@ -336,11 +320,7 @@ article h3 {
     color: white;
     transition: all 0.2s;
 }
-
-.botonEnviar:hover {
-    background-color: #0022AA;
-}
-
+.botonEnviar:hover {background-color: #0022AA;}
 .botonEnviar:active {
     background-color: white;
     color: #000000;
@@ -359,16 +339,11 @@ article h3 {
     color: white;
     transition: all 0.2s;
 }
-
-.botonResetear:hover {
-    background-color: #a00000;
-}
-
+.botonResetear:hover {background-color: #a00000;}
 .botonResetear:active {
     background-color: white;
     color: #000000;
 }
-
 
 .botonEnviarLogin {
     min-height: 2rem;
@@ -383,17 +358,11 @@ article h3 {
     color: white;
     transition: all 0.2s;
 }
-
-.botonEnviarLogin:hover {
-    background-color: #0022AA;
-}
-
+.botonEnviarLogin:hover {background-color: #0022AA;}
 .botonEnviarLogin:active {
     background-color: white;
     color: #000000;
 }
-
-
 
 #seccionBotonesFormulario {
     display: flex;
@@ -402,14 +371,18 @@ article h3 {
     justify-content: space-between;
 }
 
-
-#cargarFoto {
-    width: 0%;
-}
+#cargarFoto {width: 0%;}
 
 /* ------------------------------ Footer ---------------------------------------- */
 
 footer {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#footerLogin {
     text-align: center;
     background-color: white;
     display: flex;
@@ -448,50 +421,31 @@ footer p {
 /* -------------------------- Media Queries -------------------------- */
 
 /* Tablets */
-@media (min-width: 426px) {
+@media (min-width: 475px) {
 
-    .cajaElementosArticulos h2 {
-        display: block;
-        opacity: 100%;
-    }
-
-    nav {
-        display: block;
-    }
-
-    #seccionHamburguesa {
-        display: none;
-    }
-
+    /* --------- articulos --------- */
     article {
         width: 46%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-
-    #seccionLogo {
-        width: 33%;
+    .cajaElementosArticulos h2 {
+        display: block;
+        opacity: 100%;
     }
+    .off {text-align: center;}
 
-    #seccion-busqueda {
-        width: 33%;
-    }
+    /* --------- header--------- */
+    header {padding-bottom: 0.5rem;}
+    #headerFlex {justify-content: space-between;}
+    #seccionLogo {width: 33%;}
+    #seccion-busqueda {width: 33%;}
+    header p {width: 33%;}
 
-    header p {
-        width: 33%;
-    }
+    /* --------- nav --------- */
+    nav {display: block;}
+    #seccionHamburguesa {display: none;}
 
-    .off {
-        text-align: center;
-    }
-
-    #headerFlex {
-        justify-content: space-between;
-    }
-
-    header {
-        padding-bottom: 0.5rem;
-    }
-
+    /* --------- footer --------- */
     footer section {
         padding-top: 2rem;
         padding-left: 4rem;
@@ -502,53 +456,54 @@ footer p {
 /* Desktop-Laptop */
 @media (min-width: 1024px) {
 
-    .contenedorCamion:hover {
-        transform: rotateZ(-90deg);
-    }
-
+    /* --------- articles ---------- */
     article {
         width: 23%;
         box-shadow: 0px 0px 0px rgb(100, 100, 100);
     }
-
-    article:hover {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    article:hover .cajaElementosArticulos h2 {
-        opacity: 100%;
-    }
-
+    article:hover {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    article:hover .cajaElementosArticulos h2 {opacity: 100%;}
     .cajaElementosArticulos h2 {
         display: block;
         opacity: 0%;
     }
+    .contenedorCamion:hover {transform: rotateZ(-90deg);}
 
+    /* --------- header ---------- */
     header p {
         font-size: 16px;
         margin-left: 0;
         margin-right: 0;
     }
-
+    
+    /* --------- nav ---------- */
     .BarrasNavFlexIzq {
         width: 40%;
         justify-content: space-between;
     }
-
     .BarrasNavFlexDer {
         width: 40%;
         justify-content: space-between;
     }
+    nav a {font-size: 16px;}
 
-    nav a {
-        font-size: 16px;
+    /* ----- main ----- */
+    main {
+        position: relative;
+        top: 2rem;  
     }
 
+    /* --------- footers ---------- */
     footer {
         flex-flow: row wrap;
         justify-content: space-between;
     }
-
+    #footerLogin {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0px; 
+    }
     footer section {
         width: 30%;
         padding-top: 2rem;
@@ -556,30 +511,20 @@ footer p {
         padding-right: 1rem;
     }
 
-    .fa-credit-card:hover {
-        color: #EAC926;
-    }
-
-    .fa-gift:hover {
-        color: #EAC926;
-    }
-
-    .fa-user-shield:hover {
-        color: #EAC926;
-    }
-
+    /* --- iconos footer --- */
+    .fa-credit-card:hover {color: #EAC926;}
+    .fa-gift:hover {color: #EAC926;}
+    .fa-user-shield:hover {color: #EAC926;}
 }
 
 @media (min-width: 1440px) {
 
-    /* #navFlex{
-        justify-content: space-between;
-    } */
-    nav a {
-        font-size: 18px;
-    }
+    header p {font-size: 18px;}
 
-    header p {
-        font-size: 18px;
+    nav a {font-size: 18px;}
+
+    main {
+        position: relative;
+        top: 4rem;  
     }
 }

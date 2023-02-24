@@ -3,7 +3,7 @@ const app = express(); // Instanciamos Express y lo asignamos a la constante app
 
 const path = require('path'); // Importamos modulo nativo path y lo guardamos en la constante path
 
-app.use(express.static('../public')); // Habilitamos la carpeta public para ser accedida via http
+app.use(express.static(path.join(__dirname, '../public'))); // Habilitamos la carpeta public para ser accedida via http
 
 // Levantamos el servidor en el puerto 3000
 

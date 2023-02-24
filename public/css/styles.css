@@ -488,7 +488,7 @@ footer p {
     nav a {font-size: 16px;}
 
     /* ----- main ----- */
-    main {
+    #mainlogin{
         position: relative;
         top: 2rem;  
     }
@@ -521,9 +521,7 @@ footer p {
 
     header p {font-size: 18px;}
 
-    nav a {font-size: 18px;}
-
-    main {
+    #mainlogin{
         position: relative;
         top: 4rem;  
     }
